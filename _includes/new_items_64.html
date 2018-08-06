@@ -1,0 +1,79 @@
+{% for post in site.posts %}
+{% if post.issue == 64 %}
+{% if post.priority and post.priority < 8 %}
+{% case post.priority %}
+{% when 1 %}
+{%assign item1 = post %}
+{% when 2 %}
+{%assign item2 = post %}
+{% when 3 %}
+{%assign item3 = post %}
+{% when 4 %}
+{%assign item4 = post %}
+{% when 5 %}
+{%assign item5 = post %}
+{% when 6 %}
+{%assign item6 = post %}
+{% endcase %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+<div class="row">
+    <h4 class="section-name hindi new-in-this-issue-title"><strong>{{ site.data.translations.new-items }} 64 : 18 जून, 2018</strong></h4>
+</div>
+
+
+<div class="row new_posts">
+    <div class="col-xs-12 col-sm-12 col-md-12 new-item">
+        <a class="link-no-decoration" href="{{ site.url }}{{ site.baseurl }}{{ item1.url }}">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="{{ site.url }}{{ site.baseurl }}/static/news_images/{{ item1.image }}" alt="...">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="title" style="display: inline-flex">
+                        <h4 class="hindi" style="margin: auto"><strong>{{ item1.section }}: {{ item1.title }}</strong></h4>
+                    </div>
+                    <h4 style="width: 70%; margin-left: 15%; margin-top: 10%" class="hindi item-description justify show-in-md show-in-sm"><i>{{ item1.excerpt }}</i></h4>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 new-item">
+        <a class="link-no-decoration" href="{{ site.url }}{{ site.baseurl }}{{ item2.url }}">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="{{ site.url }}{{ site.baseurl }}/static/news_images/{{ item2.image }}" alt="...">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="title" style="display: inline-flex">
+                        <h4 class="hindi" style="margin: auto"><strong>{{ item2.section }}: {{ item2.title }}</strong></h4>
+                    </div>
+                    <h4 style="width: 70%; margin-left: 15%; margin-top: 10%" class="hindi item-description justify show-in-md show-in-sm"><i>{{ item2.excerpt }}</i></h4>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 new-item">
+        <a class="link-no-decoration" href="{{ site.url }}{{ site.baseurl }}{{ item3.url }}">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                        <img src="{{ site.url }}{{ site.baseurl }}/static/news_images/{{ item3.image }}" alt="...">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="title" style="display: inline-flex">
+                        <h4 class="hindi" style="margin: auto"><strong>{{ item3.section }}: {{ item3.title }}</strong></h4>
+                    </div>
+                    <h4 style="width: 70%; margin-left: 15%; margin-top: 10%" class="hindi item-description justify show-in-md show-in-sm"><i>{{ item3.excerpt }}</i></h4>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

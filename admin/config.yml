@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: sjohaar/mypage # Path to your Github repository
+  branch: master # Branch to update
+
+media_folder: "static/news_images"
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Section", name: "section", widget: "string"}
+      - {label: "Subsection", name: "subsection", widget: "string"}
+      - {label: "Primary", name: "primary", widget: "boolean"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Comment", name: "comments", widget: "boolean"}
+      - {label: "Share", name: "share", widget: "boolean"}
+      - {label: "Priority", name: "priority", widget: "number"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}

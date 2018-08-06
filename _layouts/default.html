@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <title>{{ page.title }}</title>
+
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/{{ site.baseurl }}/favicon2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="{{ site.url }}/{{ site.baseurl }}/favicon2/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.url }}/{{ site.baseurl }}/favicon2/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{ site.url }}/{{ site.baseurl }}/favicon2/manifest.json">
+    <link rel="mask-icon" href="{{ site.url }}/{{ site.baseurl }}/favicon2/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ site.url }}/{{ site.baseurl }}/favicon2/favicon.ico">
+    <meta name="msapplication-config" content="{{ site.url }}/{{ site.baseurl }}/favicon2/browserconfig.xml">
+    <meta name="theme-color" content="#ff0000">
+
+    <meta property="og:title" content="{{ page.title }}" />
+    <!--meta property="og:url" content="http://saathijohaar.com" /-->
+    <meta property="og:description" content="{{ page.excerpt }}" />
+    <meta property="og:image" content="{{ site.url }}/{{ site.baseurl }}static/news_images/{{ page.image }}" />
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ site.url }}/{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ site.url }}/{{ site.baseurl }}/css/small-business.css" rel="stylesheet">
+    <link href="{{ site.url }}/{{ site.baseurl }}css/new_posts.css" rel="stylesheet" />
+
+    <link href="{{ site.url }}/{{ site.baseurl }}/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="{{ site.url }}/{{ site.baseurl }}/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ site.url }}/{{ site.baseurl }}/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="holder">
+        <a rel="nofollow" href="javascript:" id="return-to-top" style="display: none;">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.baseurl }}/">
+                    <div>
+                        <img id="brand-image" src="{{ site.url }}/{{ site.baseurl }}/static/images/{{ site.logo }}" alt="">
+                        <div id="tagline" class="hindi">{{ site.tagline }}</div>
+                    </div>
+                </a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    {% for section in site.data.sections %}
+                        {% if section.page %}
+                        <li>
+                            <a class="nav-items" href="{{ site.url }}/{{ site.baseurl }}/{{ section.page }}">{{ section.name }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        {{ content }}
+    </div>
+
+    <div class="footer">
+        <div class="copyright text-center center-block">{{ site.data.translations.copyright-text }}</div>
+        <div class="text-center center-block">
+            {% if site.facebook %}
+                <a href="https://www.facebook.com/{{ site.facebook }}">
+                    <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+                </a>
+            {% endif %}
+            {% if site.twitter %}
+                <a href="https://twitter.com/{{ site.twitter }}">
+                    <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+                </a>
+            {% endif %}
+            {% if site.gplus %}
+                <a href="https://plus.google.com/+{{ site.gplus }}">
+                    <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+                </a>
+            {% endif %}
+            {% if site.email %}
+                <a href="mailto:{{ site.email }}">
+                    <i class="fa fa-envelope-square fa-3x social"></i>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+    <!-- Footer -->
+    </div>
+
+    <!-- Return to top icon js -->
+    <script src="{{ site.url }}/{{ site.baseurl }}/js/return-to-top.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+{% if page.author %}
+    {% assign authors = page.author | split: ", " %}
+    {% for author_name in authors %}
+        {% if site.data.authors[author_name] %}
+            {% assign author = site.data.authors[author_name] %}
+            <div class="media">
+                <div class="media-left">
+                    {% if author.image %}
+                    <a href="#">
+                        <img id="author-image" class="media-object" src="{{ site.url }}/{{ site.baseurl }}/static/images/{{ author.image }}" alt="...">
+                    </a>
+                    {% else %}
+                    <a href="#">
+                        <img id="no-author-image" class="media-object" src="{{ site.url }}/{{ site.baseurl }}/static/images/John Doe.jpg" alt="...">
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading hindi">{{ author.display_name }}</h4>
+                    {% if author.description %}
+                    <p class="hindi">{{ author.description }}</p>
+                    {% endif %}
+                    {% if author.facebook %}
+                    <a href="https://www.facebook.com/{{ author.facebook }}">
+                        <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+                    </a>
+                    {% endif %}
+                    {% if author.twitter %}
+                    <a href="https://twitter.com/{{ author.twitter }}">
+                        <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+                    </a>
+                    {% endif %}
+                    {% if author.gplus %}
+                    <a href="https://plus.google.com/+{{ author.gplus }}">
+                        <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+                    </a>
+                    {% endif %}
+                    {% if author.email %}
+                    <a href="mailto:{{ author.email }}">
+                        <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        {% else %}
+            <h4 class="hindi">{{ page.author }}</h4>
+        {% endif %}
+    {% endfor %}
+{% endif %}

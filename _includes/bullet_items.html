@@ -1,0 +1,15 @@
+<div class="row">
+    {% for item in include.items %}
+        <div class="col-md-12">
+            <div class="media">
+                <div class="media-left">
+                    <img class="media-object bullet-item-image" src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ item.image }}" alt="...">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading hindi"><strong>{{ item.title }}</strong></h4>
+                    <div class="hindi justify">{{ item.description }}</div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

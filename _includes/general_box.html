@@ -1,0 +1,14 @@
+<div class="row general-box">
+    {% for item in include.items %}
+        <div class="col-xs-6 col-sm-6 col-md-3 general-box-item">
+            <div class="thumbnail">
+                <a class="link-no-decoration" href="{{ site.url }}/{{ site.baseurl }}{{ item.url }}">
+                    <img class="general-box-item-image" src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ item.image }}" alt="...">
+                    <div class="caption general-box-item-caption">
+                        <p>{{ item.caption }}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>

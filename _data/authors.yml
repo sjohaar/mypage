@@ -1,0 +1,250 @@
+binod:
+    display_name: विनोद कुमार
+    email: binodkr.ranchi@gmail.com
+    facebook: vinod.jharkhand
+    description: >
+      'समर शेष है' और 'रेड जोन' उपन्यासों के लेखक व लंबे अरसे तक पत्रकारिता से जुड़े एक्टिविस्ट पत्रकार.
+    image: binod.jpg
+
+kanak:
+    display_name: कनक
+    description: >
+      74 के बिहार आंदोलन से निकली सामाजिक कार्यकर्ता व महिला पत्रिका 'संभवा' समूह के संपादन कार्य से जुड़ी प्रखर लेखिका.
+    image: kanak.jpg
+    email: srinivas.kanak@gmail.com
+
+madhukar:
+    display_name: मधुकर
+    description: >
+      बिहार के छात्र आंदोलन से निकले और तीन दशक तक प्रभात खबर से संबद्ध पत्रकार.
+    image: madhukar.jpg
+    email: madhukarranchi@gmail.com
+
+ashish:
+    display_name: आशीष सागर
+    description: किसान समस्या पर सतत आवाज बुलंद करने वाले बुंदेलखंड के सामाजिक कार्यकर्ता और पत्रकार हैं.
+    image: aasis_sagar.jpg
+    email: ashish.sagar@bundelkhand.in
+
+srinivas:
+    display_name: श्रीनिवास
+    description: सक्रिय समाजकर्मी और लंबे अरसे तक 'प्रभात खबर' से जुड़े पत्रकार.
+    image: srinivas.jpg
+    email: srinivas.kanak@gmail.com
+
+gladson:
+    display_name: ग्लैडसन डुंगडुंग
+    description: एक एक्टिविस्ट, लेखक, शोधकर्ता और प्रखर वक्ता हैं. इन्होंने हिन्दी एवं अंग्रेजी में कई पुस्तकें लिखी है.
+    image: Gladson.jpg
+    email: gladsonhractivist@gmail.com
+
+shesha:
+    display_name: वी. शेषागिरि
+    description: >
+      ‘संभवा’ समूह से जुड़ी लेखिका.
+    image: sheshagiri.jpg
+
+hemant:
+    display_name: हेमंत
+    description: सुविख्यात लेखक व पत्रकार
+    image: hemant.JPG
+
+indu:
+    display_name: इन्दु चौहान
+    description:
+    image: indu.jpg
+
+usha:
+    display_name: ऊषा भदौरिया
+    description:
+    image: usha.jpg
+
+babita:
+    display_name: बबीता कच्छप
+    description: उभरती लेखिका
+    image: babita.jpg
+
+swati:
+    display_name: श्वाति शबनम
+    description:
+    image: swati.jpg
+
+ar:
+    display_name: अतिकुर रहमान
+    description:
+    image: ARahman.jpg
+
+kavita:
+    display_name: कविता कृष्णन
+    description: लेखिका जनसंघर्षों की नेत्री और प्रखर वक्ता हैं
+    image: kavitakrisnan.jpg
+
+chandra_bhushan:
+    display_name: डा.चंद्रभूषण चौधरी
+    description: समाजवादी जनपरिषद के नेता और बुद्धीजीवी
+    image: chandra-bhusan.jpg
+
+prasenjit:
+    display_name: प्रसेनजीत महतो काछुआर
+    description: बुद्धीजीवी व समाजकर्मी
+    image: prasenjit.jpg
+
+jeetesh:
+    display_name: जीतेश कान्त शरण
+    description: जनपक्षीय अर्थशास्त्री
+    image: jeetesh.jpg
+
+manthan:
+    display_name: मंथन
+    description: समताप्रेरित तथ्यनिष्ठ विचारकर्मी
+    image: manthan.jpg
+
+deepak:
+    display_name: दीपक रंजीत
+    description: युवा एक्टीविस्ट लेखक
+    image: deepak.jpg
+
+parul:
+    display_name: पारुल ख्रीस्टीना खलखो
+    description: आदिवा​सी समाज-संस्कृति की जानकार लेखिका
+    image: parul.jpg
+
+rahi:
+    display_name: राही डूमरचीर
+    description: प्रकृति विहार के पास, ग्राम़पोस्ट-अमड़ापाड़ा, जिला-पाकुड़-814111, (झारखण्ड)
+    image: rahi.jpg
+
+subhash:
+    display_name: सुभाष चंद्र सिंह
+    description: ग्राम/पोस्ट परसिया, वाया-सरिया, जिला गिरिडीह, झारखंड
+    image: subhash_chandra_singh.jpg
+
+madan:
+    display_name: मदन मोहन
+    description: सामाजिक कार्यकर्ता
+    image: madan_mohan.jpg
+
+yatharth:
+    display_name: यर्थाथ
+    description: स्वतंत्र लेखक सह टिप्पणीकार
+    image: yatharth.jpg
+
+arjun:
+    display_name: अर्जुन प्रसाद सिंह
+    description: प्रखर वामपंथी विचारक
+    image: Arjun_Prasad.jpg
+
+vandana:
+    display_name: वंदना टेटे
+    description: कवयित्री और समाजकर्मी
+    image: vandana.jpg
+
+jacinta:
+    display_name: जसिंता केरकेट्टा
+    description: चर्चित युवा कवयित्री
+    image: jacinta.jpg
+
+priyadarshi:
+    display_name: चक्रवर्ती अशोक प्रियदर्शी
+    description: >
+        प्रखर लेखक व समाजकर्मी
+    image: priyadarshi.jpg
+
+ikbaal:
+    display_name: इकबाल अभिमन्यु
+    description: >
+        लेखक व समाजकर्मी
+    image: ikabaal.jpg
+
+saba:
+    display_name: सबा
+    description: >
+        लेखिका व समाजकर्मी
+    image: saba.jpg
+
+anil:
+    display_name: अनिल कुमार
+    description: >
+        पीएचडी, समाजशास्त्र, JNU के छात्र
+    image: anil.jpg
+
+manaali:
+    display_name: मनाली बर्मन
+    description: >
+        अर्थशास्त्री
+    image: manaali.jpg
+
+himanshu:
+    display_name: हिमांशु कुमार
+    description: >
+        सामाजिक कार्यकर्ता और प्रखर लेखक
+    image: himanshu.jpg
+
+rafeek:
+    display_name: रफ़ीक़ आज़ाद
+    description:
+    image: rafik_aazad.jpg
+
+jabeer:
+    display_name: जाबिर हुसैन
+    description:
+    image: jabir-husan.jpg
+
+mahadev:
+    display_name: महादेव टोप्पो
+    description: >
+        सुविख्यात कवि व बुद्धिजीवी
+    image: mahadev.jpg
+
+junaid:
+    display_name: जुनैद
+    description:
+    image: junaid.jpg
+
+chetan_kranti:
+    display_name: आर. चेतन क्रांति
+    description: >
+        जन चेतना के क्रांतिकारी कवि
+    image: r_chetan_kranti.jpg
+
+vijay_pratap:
+    display_name: विजय प्रताप
+    description: >
+        समाजवादी चिंतक और समाजकर्मी
+    image: vijay_pratap.jpg
+
+tameshwar:
+    display_name: तामेश्वर सिन्हा
+    description: >
+        युवा, ऊर्जावान पत्रकार, जो आजकल बस्तर में रहते हैं और अपनी जमीनी रिपोर्टों के लिए जाने जाते हैं
+    image: tameshwar.jpg
+
+jerom:
+    display_name: जेरोम जेराल्ड कुजूर
+    description: >
+        सामाजिक कार्यकर्ता और बुद्धिजीवी
+    image: jerom.jpg
+
+sanjay:
+    display_name: संजय श्रमण जोठे
+    description: >
+        समाजशास्त्री
+    image: sanjay_jothe.jpg
+
+premkumar:
+    display_name: प्रेमकुमार मणि
+    description: >
+        सुप्रसिद्ध लेखक
+    image: prem_mani.jpg
+
+ambalal:
+    display_name: अंबालाल सरपोटा
+    description: >
+        सामाजिक कार्यकर्ता व लेखक
+    image: ambalal.jpg
+
+psainath:
+    display_name: पी साईनाथ
+    description: >
+        अर्थशास्त्री व कृषि मामलों के विशेषज्ञ
+    image: psainath.jpg

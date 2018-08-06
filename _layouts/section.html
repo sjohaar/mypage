@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 other-sections">
+            <h2 class="hindi"><strong>{{ page.title }}</strong></h2>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Content Row -->
+    {% assign section_name = page.title %}
+    {% assign posts_count = 0 %}
+    {% for post in site.posts %}
+        {% if post.section == section_name %}
+            {% assign posts_count = posts_count | plus:1 %}
+        {% endif %}
+    {% endfor %}
+    {% assign item_count = 0 %}
+    {% for post in site.posts %}
+        {% assign section_separator_class = '' %}
+        {% if post.section == section_name %}
+            {% assign item_count = item_count | plus:1 %}
+            {% assign item_count_mod2 = item_count | modulo: 2 %}
+            {% if item_count_mod2 != 0 %}
+                <div class="row">
+                {% assign section_separator_class = 'section-separator' %}
+            {% endif %}
+                    <div class="col-xs-12 col-sm-6 other-sections">
+                        <div class="row {{ section_separator_class }}">
+                            <div class=col-xs-12>
+                                <a class="link-no-decoration" href="{{ site.baseurl }}{{ post.url }}">
+                                    <div class="media section_page_item">
+                                        <div class="media-left">
+                                            <img class="media-object news-item-preview-image" src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ post.image }}" alt="...">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading hindi"><strong>{{ post.title }}</strong></h4>
+                                            <div class="excerpt hindi justify">{{ post.excerpt }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            {% if item_count_mod2 == 0 or item_count == posts_count %}
+                    <div class="clearfix visible-xs-block visible-sm-block"></div>
+                </div>
+            {% else %}
+                    <div class="clearfix visible-xs-block"></div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<!-- /.container -->

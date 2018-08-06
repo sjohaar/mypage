@@ -1,0 +1,86 @@
+{% assign item1 = nil %}
+{% assign item2 = nil %}
+{% assign item3 = nil %}
+{% assign item4 = nil %}
+
+{% for post in site.posts %}
+    {% assign post_date = post.date | date: "%s" %}
+    {% assign post_expiry_date = site.last_published | date: "%s" %}
+    {% if post_date > post_expiry_date %}
+        {% if post.priority and post.priority < 5 %}
+            {% case post.priority %}
+            {% when 1 %}
+                {%assign item1 = post %}
+            {% when 2 %}
+                {%assign item2 = post %}
+            {% when 3 %}
+                {%assign item3 = post %}
+            {% when 4 %}
+                {%assign item4 = post %}
+            {% endcase %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+<div class="row new_posts">
+    <div class="col-xs-12 col-sm-3 col-md-3">
+        <div class="row fix-padding">
+            <div class="col-md-12 col-sm-12 col-xs-12 new-item first-item">
+                <div class="thumbnail">
+                    <a class="link-no-decoration" href="{{ site.url }}/{{ site.baseurl }}{{ item1.url }}">
+                        <img src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ item1.image }}" alt="...">
+                        <div class="caption overlay-caption">
+                            <p class="hindi caption-title"><strong>{{ item1.section }}: {{ item1.title }}</strong></p>
+                            <p class="hindi item-description justify">{{ item1.excerpt }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3">
+        <div class="row fix-padding">
+            <div class="col-md-12 col-sm-12 col-xs-12 new-item first-item">
+                <div class="thumbnail">
+                    <a class="link-no-decoration" href="{{ site.url }}/{{ site.baseurl }}{{ item2.url }}">
+                        <img src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ item2.image }}" alt="...">
+                        <div class="caption overlay-caption">
+                            <p class="hindi caption-title"><strong>{{ item2.section }}: {{ item2.title }}</strong></p>
+                            <p class="hindi item-description justify">{{ item2.excerpt }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3">
+        <div class="row fix-padding">
+            <div class="col-md-12 col-sm-12 col-xs-12 new-item first-item">
+                <div class="thumbnail">
+                    <a class="link-no-decoration" href="{{ site.url }}/{{ site.baseurl }}{{ item3.url }}">
+                        <img src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ item3.image }}" alt="...">
+                        <div class="caption overlay-caption">
+                            <p class="hindi caption-title"><strong>{{ item3.section }}: {{ item3.title }}</strong></p>
+                            <p class="hindi item-description justify">{{ item3.excerpt }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3">
+        <div class="row fix-padding">
+            <div class="col-md-12 col-sm-12 col-xs-12 new-item first-item">
+                <div class="thumbnail">
+                    <a class="link-no-decoration" href="{{ site.url }}/{{ site.baseurl }}{{ item4.url }}">
+                        <img src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ item4.image }}" alt="...">
+                        <div class="caption overlay-caption">
+                            <p class="hindi caption-title"><strong>{{ item4.section }}: {{ item4.title }}</strong></p>
+                            <p class="hindi item-description justify">{{ item4.excerpt }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

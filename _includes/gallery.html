@@ -1,0 +1,49 @@
+<h3 class="hindi"><strong>{{ site.data.translations.image-video-section }}</strong></h3>
+{% assign gallery_count = site.data.gallery.size %}
+{% assign row_count = gallery_count | divided_by:2 %}
+{% assign row_count_modulo2 = gallery_count | modulo:2 %}
+{% if row_count_modulo2 !=  0 %}
+    {% assign row_count = row_count | plus:1 %}   
+{% endif %}
+{% assign counter = 0 %}
+{% for i in (1..row_count) %}
+    <div class="row gallery-row">
+        {% for j in (1..2) %}
+            {% if counter <  gallery_count %}
+                <div class="col-md-6 gallery-item">
+                    {% assign gallery = site.data.gallery[counter] %}
+                    <strong class="hindi">{{ gallery.title }}</strong>
+                    <div id="gallery-{{ counter }}" class="galleria">
+                        {% for item in gallery.items %}
+                            {% if item.type == 'video' %}
+                                <a href="{{ item.source }}"><span class="video">Watch it!</span></a>
+                            {% else %}
+                                <img src="{{ site.url }}/{{ site.baseurl }}/static/galleries/{{ gallery.name }}/{{ item.source }}" data-big="static/galleries/{{ gallery.name }}/{{ item.source }}" data-title="{{ item.title }}" data-description="{{ item.description }}">
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>   
+            {% endif %}
+            {% assign counter = counter | plus:1 %}
+        {% endfor %}
+    </div>            
+{% endfor %}
+<script src="{{ site.url }}/{{ site.baseurl }}/galleria/galleria-1.5.1.min.js"></script>
+<script>    
+  (function() { 
+    Galleria.loadTheme('{{ site.url }}/{{ site.baseurl }}/galleria/themes/classic/galleria.classic.min.js');
+    Galleria.configure({
+        lightbox: true,
+        fullscreenDoubleTap: true,
+        showInfo: true,
+        _toggleInfo: false
+    });
+    Galleria.on('lightbox_close', function(e) {
+        document.getElementById(e.currentTarget.parentElement.id).scrollIntoView();
+    });
+    Galleria.on('fullscreen_exit', function(e) {
+        document.getElementById(e.currentTarget.parentElement.id).scrollIntoView();
+    });
+    Galleria.run('.galleria');
+  }());
+</script>

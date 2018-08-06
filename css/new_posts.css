@@ -1,0 +1,143 @@
+.new-in-this-issue-title {
+    color: brown;
+}
+
+/*.new_posts {
+    margin-top: 10px;
+}*/
+
+.new_posts .thumbnail {
+    padding: 0;
+    border: none;
+    /*overflow: hidden;*/
+}
+
+.new-item .title {
+    line-height: 150%;
+    background: none repeat scroll 0 0 #000;
+    opacity: 0.75;
+    text-align:center;
+    color: white;
+    margin: 0 auto !important;
+    padding: 5px 5px !important;
+}
+
+.new-item .item-description {
+    line-height: 150%;
+}
+
+@media (min-width: 1025px) {
+    .new-item .border {
+        border-left: 1px solid #ccc!important;
+    }
+
+    .new-item .thumbnail {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-item .thumbnail img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .zero-left-padding {
+        padding-left: 0;
+        padding-right: 80px;
+    }
+
+    .new-item {
+        margin-top: 25px;
+    }
+    .new-item .title {
+        height: 80px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .new-item .thumbnail {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-item .thumbnail img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-item .item-description {
+        font-size: smaller;
+    }
+
+    .new-item {
+        margin-top: 20px;
+    }
+
+    .new-item .item-description {
+        /*display: none;*/
+    }
+
+    .new-item .title {
+        height: 70px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    /*.fix-padding {
+        padding-right: 15px;
+    }
+
+    .new-item:nth-child(odd) {
+        padding-right: 0.5px;
+        padding-bottom: 1px;
+    }
+
+    .new-item:nth-child(even) {
+        padding-left: 0.5px;
+        padding-bottom: 1px;
+    }*/
+
+    .new-item {
+        margin-top: 20px;
+    }
+
+    .new-item .thumbnail {
+        width: 100%;
+        height: 100%
+    }
+
+    .new-item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-item .item-description {
+        display: none;
+    }
+
+    .new-item .title {
+        height: 60px;
+        width: 100%;
+    }
+}
+
+
+.item-excerpt {
+    line-height: 160% !important;
+    margin: 0 auto !important;
+    padding: 5px 5px !important;
+}
+
+@media (min-width: 1025px) {
+    .show-in-md {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .show-in-sm {
+        display: inline-block;
+    }
+}

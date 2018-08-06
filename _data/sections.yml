@@ -1,0 +1,29 @@
+- name: "नजरिया"
+  page: nazaria.html
+
+- name: "समाज"
+  page: samaaj.html
+
+- name: "मुद्दा"
+  page: mudda.html
+
+- name: "रपट"
+  page: report.html
+
+- name: "कविता"
+  page: kavita.html
+
+- name: "साहित्य"
+  page: sahitya.html
+
+- name: "साक्षात्कार"
+  page: interview.html
+
+- name: "पत्रकारिता की पाठशाला"
+  page: patrakarita.html
+
+- name: "इतिहास"
+  page: itihaas.html
+
+- name: "वीडियो"
+  page: video.html

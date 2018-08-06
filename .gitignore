@@ -1,0 +1,6 @@
+/.project
+.idea/
+.sass-cache/
+_site/
+Gemfile.lock
+.DS_Store
