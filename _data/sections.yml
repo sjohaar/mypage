@@ -25,5 +25,8 @@
 - name: "इतिहास"
   page: itihaas.html
 
+- name: "दस्तावेज"
+  page: dustavej.html
+
 - name: "वीडियो"
   page: video.html
