@@ -1,5 +1,5 @@
 {% for post in site.posts %}
-{% if post.issue == 69 %}
+{% if post.issue == site.new_publication_index %}
 {% if post.priority and post.priority < 8 %}
 {% case post.priority %}
 {% when 1 %}
@@ -20,7 +20,7 @@
 {% endfor %}
 
 <div class="row">
-    <h4 class="section-name hindi new-in-this-issue-title"><strong>{{ site.data.translations.new-items }} 69 : 29 अगस्त, 2018</strong></h4>
+    <h4 class="section-name hindi new-in-this-issue-title"><strong>{{ site.data.translations.new-items }} {{ site.new_publication_index }} : {{ new_publication_date }}</strong></h4>
 </div>
 
 

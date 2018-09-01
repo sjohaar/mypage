@@ -6,8 +6,15 @@ title: जोहार
 <!-- Page Content -->
 <div class="header-gutter container">
 
+    {%assign previous_publication_index = site.publication_index | minus:1 %}
+    {%assign previous_publication_date = site.data.publication_dates | where:"index", previous_publication_index | map: "date" | first %}
+    {%assign publication_date = site.data.publication_dates | where:"index", site.publication_index | map: "date" | first %}
 
-    {% include new_items_{{ site.new_publication_index }}.html %}
+    {% include new_items_template.html publication_index=site.publication_index publication_date=publication_date %}
+
+    <hr/>
+
+    {% include new_items_template.html publication_index=previous_publication_index publication_date=previous_publication_date %}
 
     {% if site.data.facebook_wall %}
     <div class="row">

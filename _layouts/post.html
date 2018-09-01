@@ -17,7 +17,7 @@ layout: default
                 <h4 class="hindi"><strong>{{ page_section_text }}</strong></h4>
                 <!-- Title -->
                 <h1 class="hindi">{{ page.title }}</h1>
-                <h4 class="hindi post-date">{{ site.new_publication_date }}</h4>
+                <h4 class="hindi post-date">{{ site.data.publication_dates | where:"index", page.issue | map: "date" | first }}</h4>
             </div>
 
 
