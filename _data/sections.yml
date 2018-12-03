@@ -16,6 +16,9 @@
 - name: "साहित्य"
   page: sahitya.html
 
+- name: "संस्कृति"
+  page: sanskriti.html
+
 - name: "साक्षात्कार"
   page: interview.html
 
