@@ -1,0 +1,14 @@
+---
+layout: default
+title: जोहार
+---
+
+<!-- Page Content -->
+<div class="header-gutter container">
+    {%assign publication_date = site.data.publication_dates | where:"index", site.publication_index | map: "date" | first %}
+
+    {% include new_items_template_2.html publication_index=site.publication_index publication_date=publication_date %}
+</div>
+
+
+<!-- /.container -->

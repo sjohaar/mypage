@@ -1,0 +1,22 @@
+<div class="row">
+    <h4 class="section-name hindi new-in-this-issue-title"><strong>{{ site.data.translations.new-items }} {{ include.publication_index }} :  {{ include.publication_date }}</strong></h4>
+</div>
+<div class="row new_posts">
+{%assign posts = site.posts | where:"issue",include.publication_index | sort:"priority" %}
+{% for post in posts %}
+    <div class="col-xs-12 col-sm-12 col-md-3 new-item">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="thumbnail">
+                    <img src="{{ site.url }}{{ site.baseurl }}/static/news_images/{{ post.image }}" alt="...">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="title" style="display: inline-flex">
+                    <h4 class="hindi" style="margin: auto"><strong>{{ post.section }}: {{ post.title }}</strong></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
