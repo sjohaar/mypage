@@ -258,3 +258,8 @@ cc:
     display_name: चित्रांगदा चौधुरी
     description: स्वतंत्र पत्रकार और शोधकर्ता
     image: chitrangda_chowdhuri.jpg
+
+siraaj:
+    display_name: सिराज दत्ता
+    description: खाद्य सुरक्षा से जुड़े सामाजकर्मी
+    image: siraaj_dutta.png
