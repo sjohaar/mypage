@@ -30,3 +30,6 @@
 
 - name: "वीडियो"
   page: video.html
+
+- name: "बहस"
+  page: bahas.html
