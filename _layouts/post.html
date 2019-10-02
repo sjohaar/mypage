@@ -34,7 +34,11 @@ layout: default
             <br/>
             {% if page.image and page.hide-image != true %}
                 <figure class="figure">
-                    <img src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ page.image }}" class="figure-img img-fluid rounded post-primary-image" alt="A generic square placeholder image with rounded corners in a figure.">
+                    {% if page.image contains "https://" %}
+                          <img src="{{ page.image }}" class="figure-img img-fluid rounded post-primary-image" alt="A generic square placeholder image with rounded corners in a figure.">
+                    {% else %}
+                          <img src="{{ site.url }}/{{ site.baseurl }}/static/news_images/{{ page.image }}" class="figure-img img-fluid rounded post-primary-image" alt="A generic square placeholder image with rounded corners in a figure.">
+                    {% endif %}
                     <figcaption class="figure-caption hindi">{{ page.image_caption }}</figcaption>
                 </figure>
                 <br/>
