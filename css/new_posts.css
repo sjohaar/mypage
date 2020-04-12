@@ -121,6 +121,10 @@
         height: 60px;
         width: 100%;
     }
+
+    .hide-item-in-sm {
+      display: none;
+    }
 }
 
 
