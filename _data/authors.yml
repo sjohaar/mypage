@@ -271,3 +271,11 @@ vasheer:
     display_name: वशीर
     description: संवेदनशील चित्रकार व कार्टूनिस्ट
     image: vasheer.jpg
+narayan_singh:
+    display_name: नारायण सिंह
+    description: प्राख्यात साहित्यकार व समालोचक
+    image: narayan_singh.jpg
+sanjay_kumar:
+    display_name: संजय कुमार
+    description: प्रखर बुद्धिजीवी
+    image:
