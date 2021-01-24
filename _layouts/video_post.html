@@ -37,11 +37,23 @@ layout: default
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8">
             <!-- Post Content -->
+            {% if page.facebook %}
+            <div id="fb-root"></div>
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+            <!-- Your embedded video player code -->
+            <div class="fb-video hindi post-content" data-href="{{page.src}}" data-width="500" data-show-text="false">
+                <div class="fb-xfbml-parse-ignore">
+                </div>
+            </div>
+            {% else %}
             <div class="hindi post-content">
                 <iframe title="YouTube video player" class="youtube-player" type="text/html"
                         width="640" height="390" src="{{page.src}}"
                         frameborder="0" allowFullScreen></iframe>
             </div>
+            {% endif %}
+
             {% if page.share %}
                 {% include shareIt.html %}
             {% endif %}
