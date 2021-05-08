@@ -305,3 +305,7 @@ banku_lahiri:
     display_name: बंकु लाहिड़ी
     description:
     image: banku_lahiri.jpg
+chetna:
+    display_name: चेतना
+    description: सफल उद्यमी और समाजकर्मी
+    image: chetna.jpg

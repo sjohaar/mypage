@@ -33,3 +33,6 @@
 
 - name: "बहस"
   page: bahas.html
+
+- name: "स्मृति शेष"
+  page: smriti.html
