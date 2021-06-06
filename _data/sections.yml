@@ -36,3 +36,6 @@
 
 - name: "स्मृति शेष"
   page: smriti.html
+
+- name: "यात्रा संस्मरण"
+  page: yatra.html
