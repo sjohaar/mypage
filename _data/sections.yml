@@ -39,3 +39,6 @@
 
 - name: "यात्रा संस्मरण"
   page: yatra.html
+
+- name: "फिल्म"
+  page: film.html
