@@ -316,3 +316,11 @@ anshu_gadi:
     display_name: अंशु गाड़ी
     image: anshu.jpg
     description: छात्रा, नवोदित लेखिका
+divya:
+    display_name: दिव्या
+    image: divya.jpg
+    description: शिक्षिका
+satya_narayan_madan:
+    display_name: सत्य नारायण मदन
+    image: madan.jpg
+    description: वाहिनी धारा के बुद्धिजीवी
