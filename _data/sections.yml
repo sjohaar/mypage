@@ -42,3 +42,6 @@
 
 - name: "फिल्म"
   page: film.html
+
+- name: "राजनीति"
+  page: rajneeti.html
